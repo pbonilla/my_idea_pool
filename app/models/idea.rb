@@ -11,6 +11,6 @@ class Idea < ApplicationRecord
   private
 
   def calculate_average
-    self.average_score = (impact + ease + confidence) / 3
+    self.average_score = (impact + ease + confidence) / 3.0
   end
 end
